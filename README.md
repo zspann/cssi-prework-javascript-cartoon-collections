@@ -1,6 +1,6 @@
 ## Objectives
 
-You're going to get familiar with iterating through arrays in Javascript. 
+You're going to get familiar with iterating through arrays in Javascript.
 
 ## Instructions
 
@@ -10,6 +10,8 @@ There are four functions to complete in this lab:
 2. Summon Captain Planet
 3. Long Planeteer Calls
 4. Find the Cheese
+
+Open SpecRunner.html to check and see if they are all passing! Write your code in `cartoon_collections.js`
 
 #### Function 1 - Dwarf Roll Call
 
