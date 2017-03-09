@@ -1,0 +1,6 @@
+# A list of javascript files required for the project, in dependency order
+javascripts:
+  files:
+    - cartoon_collections.js
+  specs:
+    - spec/cartoon_collections.spec.js
