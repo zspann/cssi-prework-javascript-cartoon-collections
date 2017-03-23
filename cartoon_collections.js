@@ -31,22 +31,12 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese(foods) {
-  var i = 0
-  while (i <= foods.length){
-    if (foods[i] != "cheddar" || "gouda" || "camembert"){
-      i = i + 1
+  var cheeses = ["cheddar", "gouda", "camembert"]
+  foundCheese = "no cheese!"
+  foods.forEach(function(food){
+    if(cheeses.includes(food)){
+      foundCheese = food;
     }
-    else if (foods[i] = "cheddar"){
-      return "cheddar"
-    }
-    else if (foods[i] = "gouda"){
-      return "gouda"
-    }
-    else if (foods[i] = "camembert"){
-      return "camembert"
-    }
-    else {
-      return "no cheese!"
-    }
-  }
+  })
+  return foundCheese
 }
