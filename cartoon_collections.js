@@ -24,7 +24,7 @@ function longPlaneteerCalls(words) {
     if (words[i].length > 4){
       result = true;
     }
-  // deleted the else condition. So the if statement above is only activated if the word is longer than 4 characters, and in all cases, the counter below will be increased by one. 
+  // deleted the else condition. So the if statement above is only activated if the word is longer than 4 characters, and in all cases, the counter below will be increased by one.
     i += 1
   }
 //moved the return outside of the while loop
@@ -32,12 +32,25 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese(foods) {
+  var i = 0
+  var result = "no cheese!"
   var cheeses = ["cheddar", "gouda", "camembert"]
-  foundCheese = "no cheese!"
-  foods.forEach(function(food){
-    if(cheeses.includes(food)){
-      foundCheese = food;
+  while (i < foods.length){
+    if (cheeses.includes(foods[i])){
+      result = foods[i]
     }
-  })
-  return foundCheese
+    i += 1
+  }
+  return result
 }
+
+//this code would find the *last* cheese instead of the first one - modified above ^^
+//   var cheeses = ["cheddar", "gouda", "camembert"]
+//   foundCheese = "no cheese!"
+//   foods.forEach(function(food){
+//     if(cheeses.includes(food)){
+//       foundCheese = food;
+//     }
+//   })
+//   return foundCheese
+// }
