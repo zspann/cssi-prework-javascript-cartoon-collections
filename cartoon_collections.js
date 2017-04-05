@@ -9,25 +9,26 @@ function dwarfRollCall(dwarves) {
 
 function summonCaptainPlanet(planeteerCalls){
 	planeteerCalls.forEach(function(call, index){
-    call = call + "!"
-    call = call.toUpperCase();
+    call = call.toUpperCase() + "!"
     planeteerCalls[index] = call
   })
   return planeteerCalls
 }
 
-// I think the test for this is broken - test accepts it but the console it doesn't return the correct results.
+//
 function longPlaneteerCalls(words) {
   var i = 0
+// just added the result variable set to false
+  var result = false
   while (i < words.length){
-    if (words[i].length <= 4){
-      return false;
-      i = i + 1
+    if (words[i].length > 4){
+      result = true;
     }
-    else {
-      return true
-    }
+  // deleted the else condition. So the if statement above is only activated if the word is longer than 4 characters, and in all cases, the counter below will be increased by one. 
+    i += 1
   }
+//moved the return outside of the while loop
+  return result
 }
 
 function findTheCheese(foods) {
